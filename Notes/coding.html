@@ -21,12 +21,17 @@
   <main class="content">
     <h1>Coding Notes</h1>
 
-  <button id="btn">
-    JavaScript Notes
-  </button>
+  <div class="doc-section">
+  
+  <div class="doc-buttons">
+    <button id="btn"">JavaScript Notes</button>
+  </div>
 
-<iframe id="viewer" width="80%" height="1000px"></iframe>
-    <script>
+  <div class="doc-container">
+    <iframe id="viewer"></iframe>
+  </div>
+
+</div>    <script>
 document.getElementById("btn").addEventListener("click", function () {
   const link = 'https://drive.google.com/file/d/1YQS36B3IsdFkPnaEkG6SjLpLzOaOybUk/preview';
   document.getElementById("viewer").src = link;
