@@ -21,11 +21,17 @@
   <main class="content">
     <h1>Coding Notes</h1>
 
-  <button onclick="loadDoc('https://drive.google.com/file/d/1YQS36B3IsdFkPnaEkG6SjLpLzOaOybUk/preview')">
+  <button id="btn">
     JavaScript Notes
   </button>
 
 <iframe id="viewer" width="100%" height="600px"></iframe>
+    <script>
+document.getElementById("btn").addEventListener("click", function () {
+  const link = "https://drive.google.com/file/d/1YQS36B3IsdFkPnaEkG6SjLpLzOaOybUk/preview";
+  document.getElementById("viewer").src = link;
+});
+</script>
     <h2>HTML</h2>
     <p>Structure of web pages</p>
   </main>
