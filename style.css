@@ -107,7 +107,7 @@ body {
   margin-top: 6-px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }*/ 
-.doc-section {
+/*.doc-section {
   display: block;
 }
 
@@ -115,14 +115,39 @@ body {
   position: relative;
   z-index: 1;
   display: block;
-  margin-bottom: 15px; /* 👈 pushes iframe down */
+  margin-bottom: 15px; 👈 pushes iframe down 
 }
 
 #viewer {
   width: 100%;
   height: 70vh;
   border: none;
-  display: block; /* 👈 important */
+  display: block; /* 👈 important 
+}*/
+.doc-layout {
+  display: flex;
+  height: 80vh;
+}
+
+/* Left panel */
+.doc-list {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Right panel */
+.doc-viewer {
+  flex: 1;
+}
+
+#viewer {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 /* DARK MODE */
 .dark body {
