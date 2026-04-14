@@ -52,7 +52,7 @@ body {
 
 .sidebar a {
   text-decoration: none;
-  color: #334155;
+  color: #b4b9bf;
   padding: 8px 10px;
   border-radius: 8px;
   display: block;
@@ -95,6 +95,13 @@ body {
   color: #64748b;
 }
 
+.content h2 {
+  margin-top: 25px;
+}
+
+.content p {
+  line-height: 1.7;
+}
 /* DARK MODE */
 .dark body {
   background: #0f172a;
