@@ -5,29 +5,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-  <h2>My Notes</h2>
-  <a href="/index.html">Home</a>
-</nav>
-<hr>
 
-  <button onclick="toggleDark()">Toggle Dark Mode</button>
+<div class="container">
 
-<script>
-function toggleDark() {
-  document.body.classList.toggle("dark");
-}
-</script>
-  
-  <h1>My Notes</h1>
-  <p>Welcome to my personal knowledge space.</p>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>My Notes</h2>
 
-  <h2>Subjects</h2>
-  <ul>
-    <li><a href="notes/math.html">Math</a></li>
-    <li><a href="Notes/coding.html">Coding</a></li>
-    <li><a href="notes/ideas.html">Ideas</a></li>
-  </ul>
+    <input type="text" id="search" placeholder="Search...">
 
+    <ul id="notesList">
+      <li><a href="notes/coding.html">Coding</a></li>
+      <li><a href="notes/math.html">Math</a></li>
+    </ul>
+
+    <button onclick="toggleDark()">🌙 Dark Mode</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <h1>Welcome 👋</h1>
+    <p>This is my personal knowledge space.</p>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
