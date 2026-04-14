@@ -5,16 +5,12 @@ if (localStorage.getItem("darkMode") === "enabled") {
 
 // Toggle dark mode
 function toggleDark() {
-  document.body.classList.toggle("dark");
+  document.documentElement.classList.toggle("dark");
 
-  let isDark = document.body.classList.contains("dark");
+  let isDark = document.documentElement.classList.contains("dark");
+
   localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
-
-  document.querySelector("button").textContent = isDark
-    ? "☀️ Light Mode"
-    : "🌙 Dark Mode";
 }
-
 // Search
 document.getElementById("search")?.addEventListener("input", function () {
   let value = this.value.toLowerCase();
