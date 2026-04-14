@@ -175,13 +175,13 @@ body {
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
   .container {
     flex-direction: column;
   }
 
-  /* Sidebar becomes top bar */
+  /* Sidebar becomes top bar 
   .sidebar {
      width: 100%;
     width: 100%;
@@ -190,28 +190,28 @@ body {
     border-bottom: 1px solid #e2e8f0;
   }
 
-  /* Content spacing */
+  /* Content spacing 
   .content {
     padding: 20px;
   }
 
-  /* Make iframe fit nicely */
+  /* Make iframe fit nicely 
   #viewer {
     height: 60vh;
   }
 
-/* Smooth scrolling */
+/* Smooth scrolling 
 html {
   scroll-behavior: smooth;
 }
 
-/* Better touch spacing */
+/* Better touch spacing 
 button {
    width: 100%;
   padding: 12px;
   font-size: 16px;
 }
-
+*/
 .dark .sidebar button {
   background: #6366f1;
 }
