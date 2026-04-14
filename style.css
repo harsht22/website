@@ -5,6 +5,10 @@ body {
   padding: 20px;
   background: #f9f9f9;
 }
+body.dark {
+  background: #121212;
+  color: white;
+}
 
 nav {
   display: flex;
