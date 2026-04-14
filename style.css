@@ -1,16 +1,21 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   max-width: 800px;
   margin: auto;
   padding: 20px;
-  line-height: 1.6;
+  background: #f9f9f9;
 }
 
-h1 {
-  color: #333;
+nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 a {
-  text-decoration: none;
-  color: blue;
+  color: #0077cc;
+}
+
+h1, h2 {
+  color: #222;
 }
