@@ -42,15 +42,15 @@ body {
 }
 
 /* Dark Mode */
-body.dark {
+.dark {
   background: #121212;
   color: white;
 }
 
-body.dark .sidebar {
+.dark .sidebar {
   background: #1e1e1e;
 }
 
-body.dark a {
+.dark a {
   color: #90cdf4;
 }
