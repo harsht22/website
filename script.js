@@ -2,7 +2,10 @@
 if (localStorage.getItem("darkMode") === "enabled") {
   document.body.classList.add("dark");
 }
-
+//docs
+function loadDoc(link) {
+  document.getElementById("viewer").src = link;
+}
 // Toggle dark mode
 function toggleDark() {
   document.documentElement.classList.toggle("dark");
