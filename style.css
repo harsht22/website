@@ -112,6 +112,8 @@ body {
 }
 
 .doc-section button {
+  position: relative;
+  z-index: 1;
   display: block;
   margin-bottom: 15px; /* 👈 pushes iframe down */
 }
