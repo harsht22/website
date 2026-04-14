@@ -10,6 +10,9 @@ function toggleDark() {
   let isDark = document.documentElement.classList.contains("dark");
 
   localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+  document.querySelector("button").textContent = isDark
+    ? "☀️ Light Mode"
+    : "🌙 Dark Mode";
 }
 // Search
 document.getElementById("search")?.addEventListener("input", function () {
