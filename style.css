@@ -127,6 +127,7 @@ body {
 .doc-layout {
   display: flex;
   height: 80vh;
+  gap: 50px
 }
 
 /* Left panel */
@@ -136,11 +137,12 @@ body {
   width: 200px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
 }
 
 /* Right panel */
 .doc-viewer {
+  
   flex: 1;
 }
 
