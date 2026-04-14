@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coding Notes</title>
+  <script>
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.documentElement.classList.add("dark");
+  }
+</script>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>My Notes</h2>
+    <a href="../index.html">← Back</a>
+  </aside>
+
+  <main class="content">
+    <h1>Coding Notes</h1>
+
+  <button id="btn">
+    JavaScript Notes
+  </button>
+
+<iframe id="viewer" width="80%" height="1000px"></iframe>
+    <script>
+document.getElementById("btn").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/1YQS36B3IsdFkPnaEkG6SjLpLzOaOybUk/preview';
+  document.getElementById("viewer").src = link;
+});
+</script>
+    <h2>HTML</h2>
+    <p>Structure of web pages</p>
+  </main>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
