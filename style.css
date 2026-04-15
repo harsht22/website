@@ -181,8 +181,8 @@ body {
   background: #6366f1;
 }
 .dark button{
-  background: #4e51de
-  /*color: #e2e8f0*/
+  background: #4e51de;
+  color: #e2e8f0
 }
 /* Mobile styles */
 @media (max-width: 768px) {
