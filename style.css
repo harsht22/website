@@ -206,7 +206,7 @@ body {
   color: #475569;
 
   border: 1px solid #e2e8f0;
-  border-radius: 8px; /* pill shape */
+  border-radius: 500px; /* pill shape */
 
   padding: 8px 14px;
   font-size: 14px;
@@ -215,6 +215,18 @@ body {
   cursor: pointer;
 
   transition: all 0.2s ease;
+}
+.doc-list button:hover {
+  background: #f1f5f9;
+  color: #2563eb;
+  border-color: #cbd5f5;
+}
+.doc-list button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 /* Right panel */
 .doc-viewer {
@@ -252,13 +264,27 @@ body {
   color: white;
 }
 
-
 .dark .sidebar button {
   background: #6366f1;
 }
 .dark button{
   background: #020617;
   color: #e2e8f0
+}
+/*dark viewer*/
+.dark .doc-list button {
+  border: 1px solid #334155;
+}
+
+.dark .doc-list button:hover {
+  background: #1e293b;
+  color: #818cf8;
+}
+
+.dark .doc-list button.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
 }
 /* Hide menu button on desktop */
 .menu-toggle {
