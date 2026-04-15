@@ -17,6 +17,11 @@ function toggleDark() {
     ? "☀️ Light Mode"
     : "🌙 Dark Mode";
 }
+// Toggle sidebar
+function toggleMenu() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+}
 // Search
 document.getElementById("search")?.addEventListener("input", function () {
   let value = this.value.toLowerCase();
