@@ -15,7 +15,9 @@ body {
 }
 
 /* Profile image */
-.profile-pic{
+.profile-pic:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
   width: 140px;
   height: 140px;
   border-radius: 50%;
