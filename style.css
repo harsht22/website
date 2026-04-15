@@ -180,6 +180,9 @@ body {
 .dark .sidebar button {
   background: #6366f1;
 }
+.dark button{
+  background: #4e51de
+}
 /* Mobile styles */
 @media (max-width: 768px) {
 
