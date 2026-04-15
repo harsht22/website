@@ -15,9 +15,7 @@ body {
 }
 
 /* Profile image */
-.profile-pic:hover{
-  transform: scale(1.005);
-  transition: 0.3s;
+.profile-pic{
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -25,6 +23,10 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
+
+.profile-pic:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
 
 /* Heading */
 .home h1 {
