@@ -8,22 +8,41 @@ body {
   background: #f8fafc;
   color: #1e293b;
 }
-.home-layout {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+.home {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Intro section */
-.home-intro {
-  max-width: 500px;
+/* Profile image */
+.profile-pic{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
+/* Heading */
+.home h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Intro text */
+.intro {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Socials */
 .socials {
   margin-top: 20px;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .socials a {
@@ -34,16 +53,6 @@ body {
 
 .socials a:hover {
   text-decoration: underline;
-}
-
-/* Photo */
-.home-photo img:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-  width: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 .container {
   display: flex;
