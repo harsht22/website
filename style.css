@@ -25,6 +25,11 @@ body {
 
   transition: all 0.2s ease;
 }
+button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
 
 /* Profile image */
 .profile-pic{
@@ -270,6 +275,11 @@ body {
 .dark button{
   background: #020617;
   color: #e2e8f0
+}
+.dark button.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
 }
 /*dark viewer*/
 .dark .doc-list button {
