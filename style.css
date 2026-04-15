@@ -193,10 +193,12 @@ body {
 
 /* Left panel */
 .doc-list {
+  position: relative;
+  z-index: 1;
+  width: 200px;
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
 }
 
 .doc-list button {
