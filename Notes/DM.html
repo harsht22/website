@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DM</title>
+  <script>
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.documentElement.classList.add("dark");
+  }
+</script>
+<link rel="stylesheet" href="../style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>Index</h2>
+    <a href="../index.html">← Back</a>
+  </aside>
+
+  <main class="content">
+    <h1>Problems and solutions of topics in differential manifolds</h1>
+    <div class="doc-layout">
+
+  <div class="doc-list">
+    <button id="btn">Fundamentals</button>
+    <button id="btn2">Smooth Maps</button>
+    <button id="btn3">Tangent Space</button>
+    <button id="btn4">Submersion and Covering Maps</button>
+    <button id="btn5">Embbeded Submanifold and Lie Group</button>
+    <button id="btn6">Lie Group Action </button>
+    <button id="btn7">Lie Algebra</button>
+    <button id="btn8">Vector Fields and Flow</button>
+    <button id="btn9">Differential Forms</button>
+    
+  </div>
+
+  <div class="doc-viewer">
+    <iframe id="viewer"></iframe>
+  </div>
+
+</div>
+    <script>
+/*1*/
+document.getElementById("btn").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/1N5eogDxk-YS0BwHHBMlBKN8jnTN1ou_l/preview';
+  document.getElementById("viewer").src = link;
+});
+/*2*/
+document.getElementById("btn2").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/1eYG_wzVkLIhIO25GxBfEW-lXjzkhso-H/preview';
+  document.getElementById("viewer").src = link;
+});
+/*3*/
+document.getElementById("btn3").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/1w3XdYUYny6mt8euxRnt83-kDG4oDtLYS/preview';
+  document.getElementById("viewer").src = link;
+});
+/*4*/
+document.getElementById("btn4").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/1ihlOCghVZ658vkjMvMjmSFzGAxeAe2aK/preview';
+  document.getElementById("viewer").src = link;
+});
+/*5*/
+document.getElementById("btn5").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/1VC8zJaHqboudtItpuPhoomxrvtB2oRe1/preview';
+  document.getElementById("viewer").src = link;
+});
+/*6*/
+document.getElementById("btn6").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/1oXr5iK169guIcdmfWHQHI8kalGNmVh9v/preview';
+  document.getElementById("viewer").src = link;
+});
+/*7*/
+document.getElementById("btn7").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/12xbgfBdwGcflVG-Pf0kdFOz0RAo-U9Lm/preview';
+  document.getElementById("viewer").src = link;
+});
+/*8*/
+document.getElementById("btn8").addEventListener("click", function () {
+  const link = 'https://drive.google.com/file/d/1tTPlztrEgw5jS4vN4BcfkInoun4--lDU/preview';
+  document.getElementById("viewer").src = link;
+});   
+/*9*/
+document.getElementById("btn9").addEventListener("click", function () {
+  const link = '/preview';
+  document.getElementById("viewer").src = link;
+});
+
+</script>
+  </main>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
