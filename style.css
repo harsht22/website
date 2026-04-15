@@ -27,7 +27,7 @@ body {
 .profile-pic:hover{
   transform: scale(1.05);
   transition: 0.3s;
-
+}
 /* Heading */
 .home h1 {
   font-size: 28px;
