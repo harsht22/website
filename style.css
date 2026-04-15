@@ -8,7 +8,43 @@ body {
   background: #f8fafc;
   color: #1e293b;
 }
+.home-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
 
+/* Intro section */
+.home-intro {
+  max-width: 500px;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* Photo */
+.home-photo img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
 .container {
   display: flex;
   height: 100vh;
@@ -186,6 +222,18 @@ body {
 }
 /* Mobile styles */
 @media (max-width: 768px) {
+   .home-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-photo img {
+    width: 150px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
 
   .container {
     flex-direction: column;
